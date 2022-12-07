@@ -13,7 +13,7 @@ class Personal{
 class Student:public Personal{
 	public:
 		string rollno;
-		Student(string name,string rollno):Personal(name);
+		Student(string name,string rollno):Personal(name)
 		{
 			this->rollno=rollno;
 		}
