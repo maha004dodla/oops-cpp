@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-template <typename T>
+template <typename T,typename U>
 class student{
 	public:
-		string name;
-		T rollno;
-		student(string n,T roll)
+		T name;
+		U rollno;
+		student(T n,U roll)
 		{
 			name=n;
 			rollno=roll;
@@ -17,8 +17,8 @@ class student{
 };
 int main()
 {
-	student<int> s1("maha",123);
-	student<string> s2("siri","124");
+	student<string,int> s1("maha",123);
+	student<string,string> s2("siri","124");
 	s1.display();
 	s2.display();
 }
